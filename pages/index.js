@@ -1,7 +1,16 @@
+import Header from "../components/Header"
+
+const styles = {
+  wrapper: `h-screen w-screen flex flex-col bg-[#222229]`,
+  cardsContainer: `flex flex-col items-center justify-center flex-1`,
+}
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className={styles.wrapper}>
+      <Header/>
+      <div className={styles.cardsContainer}>
+      </div>
+    </div>
   )
 }
